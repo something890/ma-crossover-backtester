@@ -12,7 +12,7 @@ metrics used in finance.
 
 ![Equity curve and drawdown chart](output/equity_curve.png)
 
-## The strategy, in plain English
+## The strategy 
 
 For each stock, track two moving averages of its closing price: a fast one
 (50 trading days, ~2.5 months) and a slow one (200 trading days, ~10 months).
@@ -125,7 +125,7 @@ python main.py --refresh  # forces a fresh download from Yahoo Finance
 This fetches data, runs the backtest, prints the metrics table, and writes
 `output/equity_curve.png`.
 
-## Results (snapshot)
+## Results
 
 Numbers below are from a run ending **2026-09-08** and will shift on a
 re-run as new price data comes in — they're illustrative of what the tool
@@ -140,7 +140,7 @@ reports, not a fixed claim.
 | Max drawdown | −25.6% | −31.3% | −33.7% |
 | Calmar ratio | 0.38 | 0.55 | 0.44 |
 
-**Reading it honestly:** the crossover rule did lower volatility and shrink
+The crossover rule did lower volatility and shrink
 the worst drawdown a bit — it's doing its intended job to some degree. But it
 gave up much more upside than it saved in downside: its Sharpe and Calmar
 ratios are the worst of the three, and it still fell alongside everything
