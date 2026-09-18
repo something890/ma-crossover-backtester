@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Cached market data (re-downloadable, keep the repo light)
+data/*.csv
+
+# Generated output -- ignore everything except the chart the README embeds
+output/*
+!output/equity_curve.png
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
